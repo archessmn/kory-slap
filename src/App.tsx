@@ -11,7 +11,6 @@ function App() {
 
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    console.log(x);
     setLeft(0 - Math.max(Math.round(159 * ((720 - x) / 1280)) * 1280, 0));
   }, [x]);
 
