@@ -23,7 +23,9 @@ jobs:
           cmd: install
 
       - name: Build project
-        run: npm run build --base=/kory-slap/
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build --base=/kory-slap/
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v4
